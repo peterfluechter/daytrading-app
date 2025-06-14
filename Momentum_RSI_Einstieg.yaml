@@ -1,0 +1,15 @@
+
+Strategie_Name: Momentum_RSI_Einstieg
+Beschreibung: Kaufe ein Wertpapier, wenn es Momentum zeigt und der RSI unter 30 liegt.
+Indikatoren:
+  RSI:
+    Zeitraum: 14
+    Einstiegsschwelle: 30
+  Momentum: {}
+Einstieg:
+  Bedingung: "Momentum positiv UND RSI < 30"
+Ausstieg:
+  Bedingung: "RSI > 70 ODER Momentum negativ"
+Risikomanagement:
+  Kapitalanteil_pro_Trade: "max. 5%"
+  Kelly_Kriterium: "optional"
