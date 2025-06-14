@@ -3,6 +3,8 @@ import yaml
 import os
 import glob
 
+st.set_page_config(page_title="Daytrading Signalgenerator", layout="centered")
+
 STRATEGIE_PFAD = "strategien"
 
 @st.cache_data
@@ -20,7 +22,6 @@ def lade_strategien(pfad):
 
 strategien = lade_strategien(STRATEGIE_PFAD)
 
-st.set_page_config(page_title="Daytrading Signalgenerator", layout="centered")
 st.title("📊 Daytrading Signalgenerator")
 
 if not strategien:
